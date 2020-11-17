@@ -10,18 +10,18 @@ define kwon = Character('권지웅 전문가', color="#000000")
 define radiodj = Character('라디오 DJ', color="#000000")
 define ddal = Character('딸', color="#000000")
 define kkondae = Character('박 부장', color="#000000")
-define jung = Character('정 인턴', color="#000000")
+define jung = Character('정 인턴', color="#000000", image = "jung")
 define gui.text_color = '#000000'
 define gui.interface_text_color = '#ff0000'
 define gender = ""
+image side jung smile = "images/jung.png"
 ## 인-게임 글자에 사용됩니다.
 define gui.text_font = "NanumBarunGothic.ttf"
-
 ## 캐릭터의 이름에 사용됩니다.
 define gui.name_text_font = "NanumBarunGothicBold.ttf"
-
 ## 인터페이스에 사용됩니다.
 define gui.interface_text_font = "NanumBarunGothicBold.ttf"
+
 
 
 # 여기에서부터 게임이 시작합니다.
@@ -35,7 +35,6 @@ label start:
     menu:
         "여자":
               $gender = "엄마"
-
 
         "남자":
               $gender = "아빠"
@@ -105,6 +104,26 @@ label start:
 
         "아니요":
               "(정 인턴이 낑낑대며 A4용지 더미를 가져온다.{fast} 도와줘야겠다.)"
+              jung smile "감사합니다 대리님~ "
+              "(정 인턴이 휴대폰을 힐끗 보았다.)"
+              jung smile "헐~ 대박~ "
+              me "뭔데 그래?"
+              jung smile "저희 예전에 회식 장소 후보였던 동백포차 있잖아여.{fast}"
+              jung smile "거기서 산악회 모임하다가 버그바이러스 단체로 감염됐대요."
+              me "버그바이러스? {fast} 요새 한참 뉴스에서 나오던데.{fast} 근데 이름이 버그바이러스야?"
+              jung smile "그… 버그로 끝나는 지역에서 시작된 거라서 그렇게 부를걸요?"
+              jung smile "저도 얼핏 들은 거라 잘 몰라여. {fast}{b}(머리를 긁적인다.){/b}"
+              "(고된 하루가 끝났다. 집으로 돌아가자.)"
+    "집 안"
+    ddal "[gender]... 나 몸이 간지러워"
+
+    menu:
+        "무슨 일 있었어?":
+              ""
+
+
+        "약 발라":
+              "(정 인턴이 낑낑대며 A4용지 더미를 가져온다.{fast} 도와줘야겠다.)"
               jung "감사합니다 대리님~ "
               "(정 인턴이 휴대폰을 힐끗 보았다.)"
               jung "헐~ 대박~ "
@@ -115,9 +134,7 @@ label start:
               jung "그… 버그로 끝나는 지역에서 시작된 거라서 그렇게 부를걸요? {fast}
               저도 얼핏 들은 거라 잘 몰라여. {fast}{b}(머리를 긁적인다.){/b}"
               "(고된 하루가 끝났다. 집으로 돌아가자.)"
-    "집 안"
-    ddal "[gender]... 나 몸이 간지러워"
-    me ""
+              ""
 
 
 

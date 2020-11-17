@@ -24,7 +24,6 @@ style hyperlink_text:
 style gui_text:
     properties gui.text_properties("interface")
 
-
 style button:
     properties gui.button_properties("button")
 
@@ -112,7 +111,7 @@ screen say(who, what):
     ## 사이드 이미지가 있는 경우 글자 위에 표시합니다. 휴대폰 환경에서는 보이지
     ## 않습니다.
     if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
+        add SideImage() xalign 1.0 yalign 1.0
 
 
 ## Character 객체를 통해 스타일을 지정할 수 있도록 namebox를 사용할 수 있게 만듭
