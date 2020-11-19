@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 82: Tab characters are not allowed in Ren'Py scripts.
+File "game/script.rpy", line 152: Say menuitems and captions may not exist in the same menu.
+    news "어제 밤 사이 늘어난 확진자 수만 현재 천 명이 넘어가고 있다고 하는데요. 병원에 오지 않았거나 신고하지 않은 사람들까지 더하면 그 수가 족히 두 배는 넘을 것으로 예상됩니다."
+                                                                                                             ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Nov 17 02:47:01 2020
+Tue Nov 17 15:33:08 2020

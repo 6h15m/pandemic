@@ -1,79 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script
-    "당신 이름은?"
-  File "game/script.rpy", line 30, in script
-    "당신 이름은?"
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-  File "game/screens.rpy", line 95, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 95, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 113, in execute
-    if side_image:
-NameError: name 'side_image' is not defined
+  File "game/script.rpy", line 189, in script
+    phone "[자두유치원 원생 아라 양 보호자 되시나요?]"
+SyntaxError: invalid syntax (<none>, line 1)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/bootstrap.py", line 316, in bootstrap
-    renpy.main.main()
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/main.py", line 578, in main
-    run(restart)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/main.py", line 143, in run
-    renpy.execution.run_context(True)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/execution.py", line 908, in run_context
-    context.run()
-  File "game/script.rpy", line 30, in script
-    "당신 이름은?"
-  File "game/script.rpy", line 30, in script
-    "당신 이름은?"
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 671, in execute
-    statement_name("say")
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 45, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/exports.py", line 1601, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 2251, in do_with
-    clear=clear)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 430, in visit_all
-    callback(self)
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 440, in per_interact
-    self.update()
-  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 625, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 95, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 95, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 113, in execute
-    if side_image:
-  File "<screen language>", line 113, in <module>
-NameError: name 'side_image' is not defined
+  File "game/script.rpy", line 189, in script
+    phone "[자두유치원 원생 아라 양 보호자 되시나요?]"
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 1115, in __call__
+    who = renpy.python.py_eval(who)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/python.py", line 2057, in py_eval
+    code = py_compile(code, 'eval')
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/python.py", line 692, in py_compile
+    raise e
+SyntaxError: invalid syntax (<none>, line 1)
 
 Darwin-20.1.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 pandemic 1.0
-Tue Nov 17 15:03:05 2020
+Tue Nov 17 15:51:27 2020
