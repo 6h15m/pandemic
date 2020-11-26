@@ -7,7 +7,7 @@
 <img src = "https://user-images.githubusercontent.com/52748335/99237366-b16fae80-283b-11eb-9844-d251f9cad846.png">
 
 
-2020년 별빛 신사리 홍보 콘텐츠 공모전 출품작입니다.
+2020년 별빛 신사리 홍보 콘텐츠 공모전 작입니다.
 
 
 
